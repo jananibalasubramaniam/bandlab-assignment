@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bandlab assignment</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://www.bandlab.com/web-app/images/favicons/favicon-32x32-60cb984352.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+  <body class="home-bg">
+    <header>
+      <nav class="nav-menu">
+        <ul>
+          <li>
+            <span class="material-symbols-outlined"> home </span>
+          </li>
+          <li>
+            <a href="music-library.html">
+              <span class="material-symbols-outlined"> library_music </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="sort-filter-container" class="sort-filter">
+      <span id="sort-button" class="material-symbols-outlined sort-button">
+        sort
+        <span class="tooltip"> Sort by Title </span>
+      </span>
+      <div class="custom-dropdown">
+        <span id="group-button" class="material-symbols-outlined group-button">
+          filter_alt
+          <span class="tooltip"> Group posts by user Id </span>
+        </span>
+        <ul id="user-filter" class="filter-dropdown" hidden></ul>
+      </div>
+    </section>
+    <section id="posts"></section>
+    <section id="error-message" class="error-message"></section>
+    <script src="scripts/posts.js" defer></script>
+  </body>
+</html>
